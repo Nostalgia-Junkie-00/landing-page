@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#hero, footer {
+header, #hero, footer {
     background-color: #1f2937;
 }
 
