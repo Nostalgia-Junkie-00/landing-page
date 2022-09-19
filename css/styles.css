@@ -9,24 +9,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, footer {
+#hero, footer {
     background-color: #1f2937;
 }
 
-#main-text {
+#hero h1 {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
-#second-text, ul li a {
+#hero p, a {
     font-size: 18px;
     color: #E5E7EB;
 }
 a {
     text-decoration: none;
 }
-
 #logo {
     font-size: 24px;
     color: #F9FAF8;
