@@ -6,80 +6,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./css/styles.css">
+        <script src="https://kit.fontawesome.com/0844104394.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- HEADER -->
-        <header>
-            <h1 id="logo">Header Logo</h1>
-            <nav>
+        <header class="header">
+            <h3 class="header-logo">Header Logo</h3>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="">header link one</a></li>
-                    <li><a href="">header link two</a></li>
-                    <li><a href="">header link three</a></li>
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">header link two</a></li>
+                    <li><a href="#">header link three</a></li>
                 </ul>
             </nav>
+            <div id="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-x"></i> -->
+            </div>
         </header>
-        <!-- MAIN -->
-        <main>
-            <section id="hero">
-                <div>
-                    <h1>This website is <br>awesome</h1>
+        <!--  MAIN  -->
+        <main class="main">
+            <section class="section hero">
+                <div class="about">
+                    <h1>This website is awesome</h1>
                     <p>
-                        This website has some subtext that goes here under the<br>
-                        main title. It's a smaller font and the color is lower<br>
-                        contrast
+                        This website has some subtext that goes here under the
+                        main title. It's a smaller font and the color is lower
+                        contrast.
                     </p>
-                    <button id="hero-btn" class="btn">Sign Up</button>
+                    <button id="hero-btn" class="sign-up">Sign up</button>
                 </div>
-                <div id="placeholder">
-                    <p>this is a placeholder for an image</p>
-                </div>
-            </section>
-            <section id="section_1">
-                <h1>Some random information</h1>
-                <div id="projects">
-                    <article class="project">
-                        <div class="project-img"></div>
-                        <p>this is some subtext under an illustration or image</p>
-                    </article>
-                    <article class="project">
-                        <div class="project-img"></div>
-                        <p>this is some subtext under an illustration or image</p>
-                    </article>
-                    <article class="project">
-                        <div class="project-img"></div>
-                        <p>this is some subtext under an illustration or image</p>
-                    </article>
-                    <article class="project">
-                        <div class="project-img"></div>
-                        <p>this is some subtext under an illustration or image</p>
-                    </article>
+                <div class="placeholder">
+                    <span class="placeholder-text">this is a placeholder for an image</span>
                 </div>
             </section>
-            <section id="section_2">
-                <div>
-                    <p id="quote">
-                        This is an inspiring quote, or a testimonial from a <br>
-                        customer. Maybe it's just filling up space, or maybe <br> 
-                        people will actually read it. Who knows? All I know <br>
-                        is that it looks nice. <br>
-                        <span id="speaker">-Thor, God of Thunder</span>
-                    </p>
+            <section class="section info">
+                <h2 class="info-header">Some random information</h2>
+                <div class="projects">
+                    <article class="project">
+                        <div class="project-img"></div>
+                        <p>
+                            this is some subtext<br>
+                            under an illustration<br>
+                            or image
+                        </p>
+                    </article>
+                    <article class="project">
+                        <div class="project-img"></div>
+                        <p>
+                            this is some subtext<br>
+                            under an illustration<br>
+                            or image
+                        </p>
+                    </article>
+                    <article class="project">
+                        <div class="project-img"></div>
+                        <p>
+                            this is some subtext<br>
+                            under an illustration<br>
+                            or image
+                        </p>
+                    </article>
+                    <article class="project">
+                        <div class="project-img"></div>
+                        <p>
+                            this is some subtext<br>
+                            under an illustration<br>
+                            or image
+                        </p>
+                    </article>
                 </div>
             </section>
-            <section id="section_3">
-                <div>
-                    <div>
-                        <h2>Call to action! It's time!</h2>
+            <section class="section quote">
+                <p>
+                    This is an inspiring quote, or a testimonial from a <br>
+                    customer. Maybe it's just filling up space, or mayber <br>
+                    people will actually read it. Who knows? All I know <br>
+                    is that it looks nice.<br>
+                    <span class="thor">-Thor, God of Thunder</span>
+                </p>
+            </section>
+            <section class="section action">
+                <div class="action-wrapper">
+                    <div class="action-text">
+                        <h3>Call to action! It's time!</h3>
                         <p>Sign up for our product by clicking that button right over there!</p>
                     </div>
-                    <button id="action" class="btn">Sign up</button>
+                    <button id="action-btn" class="sign-up">Sign up</button>
                 </div>
             </section>
         </main>
         <!-- FOOTER -->
-        <footer>
-            <p>Copyright &copy; The Odin Project 2021</p>
+        <footer class="footer">
+            <span class="copyright">Copyright &copy; The Odin Project 2021</span>
         </footer>
+        <script src="/javaScript/app.js"></script>
     </body>
 </html>
