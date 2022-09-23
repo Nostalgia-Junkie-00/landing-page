@@ -19,14 +19,15 @@ body {
 .sign-up {
     background-color: #3882F6;
     color: #E5E7EB;
-    max-width: 150px;
-    min-width: 150px;
+    max-width: 200px;
+    min-width: 200px;
     border-radius: 0.5rem;
     border: none;
-    padding: 0.4rem 0;
-    font-size: 18px;
+    padding: 1rem 0;
+    font-size: 25px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 .sign-up:hover {
     background-color: #92bafa;
@@ -35,6 +36,7 @@ body {
 /*-------------------- HEADER --------------------*/
 .header {
     width: 100%;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,19 +52,30 @@ body {
     color: #F9FAF8;
 }
 /*---------- navigation  ----------*/
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
 /*----- ul -----*/
 ul {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 0.5rem;
+    gap: 3rem;
 }
 /*-- li --*/
 li {
-    padding: 0.5rem;
-    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 li:hover {
     background-color: rgba(0, 0, 0, 0.5)
@@ -111,17 +124,19 @@ a {
 /*----- about -----*/
 .about {
     flex-direction: column;
-    gap: 0.6rem;
 }
 /*-- h1 --*/
 .about h1 {
     color: #F9FAF8;
-    font-size: 48px;
+    font-size: 58px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 /*-- p --*/
 .about p {
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 /*----- placeholder -----*/
 .placeholder {
@@ -166,10 +181,11 @@ a {
     border: 3px solid #3882F6;
     border-radius: 1rem;
 }
-/*- project p -*/
-.project p {
+/*- project h3 -*/
+.project h3 {
     text-align: center;
-    font-weight: thin;
+    font-weight: lighter;
+    font-size: 30px;
 }
 /*----------  quote  ----------*/
 .quote {
@@ -178,8 +194,8 @@ a {
     justify-content: center;
     align-items: center;
 }
-/*----- quote p -----*/
-.quote p {
+/*----- quote h1 -----*/
+.quote h1 {
     font-size: 36px;
     font-weight: 100;
     font-style: italic;
@@ -224,31 +240,47 @@ a {
 
 /*-------------------- Responsive Styles --------------------*/
 @media(max-width: 960px){
+    .sign-up {
+        background-color: #3882F6;
+        color: #E5E7EB;
+        max-width: 150px;
+        min-width: 150px;
+        border-radius: 0.5rem;
+        border: none;
+        padding: 0.4rem 0;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
     /*-------------------- HEADER --------------------*/
     .header {
-        z-index: 1;
-        position: relative;
+        z-index: 2;
         flex-direction: row;
         padding: 1rem;
+        background-color:#1F2937;
     }
     /*---------- header-logo ----------*/
     .header-logo {
         font-size: 36px;
+        background-color: #1F2937;
     }
     /*---------- navigation  ----------*/
     .navigation {
-        z-index: -1;
+        height: 40%;
+        background-color:#1F2937;
         position: fixed;
-        display: none;
         align-items:flex-start;
-        background-color: #3882F6;
         padding: 2rem 0rem;
         width: 100%;
-        top: 5rem;
-        left: 0;
+        top: 74px;
+        right: -100%;;
+        transition: 0.5s;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
     }
     .navigation.active {
-        display: flex;
+        right: 0;
     }
     
     /*----- ul -----*/
@@ -304,8 +336,18 @@ a {
         justify-content: center;
         text-align: center;
     }
-    /*-- h1 --*/
+   /*-- h1 --*/
+    .about h1 {
+        color: #F9FAF8;
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
     /*-- p --*/
+    .about p {
+        color: #E5E7EB;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
     /*----- placeholder -----*/
     /*----------  info  ----------*/
     .info {
@@ -323,14 +365,19 @@ a {
     }
     /*-- project --*/
     /*- project-img -*/
-    /*- project p -*/
+    /*- project h3 -*/
+    .project h3 {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 25px;
+    }
     /*----------  quote  ----------*/
     .quote {  
         flex-direction: column;
         padding: 1rem;
     }
-    /*----- quote p -----*/
-    .quote p {
+    /*----- quote h1 -----*/
+    .quote h1 {
         font-size: 25px;
         text-align: center;
     }
